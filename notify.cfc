@@ -5,7 +5,7 @@ Written by Eric Hynds 5/19/08.
 
 Usage:
 
-	1. Make sure the correct CSS classes (below) are added to your stylesheet.
+	1. Make sure the correct CSS classes (notify.css) are added to your stylesheet.
 	
 	2. Create this object in your Application.cfc|cfm file.
 		
@@ -41,19 +41,6 @@ Usage:
 			]
 		}>
 		<cfset message = notify.compile(error)>
-		
-
-	/* message styles */
-	.message { padding:10px; margin:15px 0; display:block; text-align:left }
-	.message-title { font-weight:bold; font-size:1.25em }
-	.message-body { margin-top:4px }
-	.error, .notice, .success { padding:.8em; margin-bottom:1em; border:2px solid #ddd }
-	.error { background:#FBE3E4; color:#8a1f11; border-color:#FBC2C4 }
-	.notice { background:#FFF6BF; color:#514721; border-color:#FFD324 }
-	.success { background:#E6EFC2; color:#264409; border-color:#C6D880 }
-	.error a { color:#8a1f11 }
-	.notice a { color:#514721 }
-	.success a { color:#264409 }
 --->
 
 <cfcomponent name="notify" output="false">
