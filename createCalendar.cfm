@@ -6,23 +6,7 @@
 *
 * original logic by William Steiner (2002)
 * improved by Randy H. Drisgill (2006)
-* converted to cfml + improvements by Eric Hynds (2008)
-
-<style type="text/css">
-#calendar { width:100%; }
-#calendar td,
-#calendar th { padding:3px }
-#calendar th { background-color: #717171; color: #FFFFFF; font-size: .95 em; font-weight: bold; text-align: center; } /* prev/next links; current month and year */
-#calendar th a { color:#fff }
-#calendar #calendar-form-container { text-align:right } /* form to change month/year */
-#calendar #calendar-form-container form { margin:0; padding:0; }
-#calendar .calendar-day-all { vertical-align:top; text-align:left; width:14%; height:100px; } /* applied to every day */
-#calendar .calendar-day-current { background-color: #e1e1e1; } /* only applied to current day */
-#calendar .calendar-day-notcurrent { background-color: whitesmoke; } /* applied to all days except current */
-#calendar .calendar-day-digit { font-weight:bold; } /* applied to the number of the day for each day */
-#calendar .calendar-subheader { background-color: #aaaaaa; color: #FFFFFF; font-weight: bold; text-align: center; } /* monday - friday */
-</style>
- ---> 
+* converted to cfml + improvements by Eric Hynds (2008) ---> 
 <cffunction name="createCalendar" output="false" returntype="string">
 	<cfargument name="curMonth" required="true" type="numeric">
 	<cfargument name="curYear" required="true" type="numeric">	<cfset var filename = cgi.script_name>
